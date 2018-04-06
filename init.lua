@@ -53,14 +53,15 @@ remapKey({'ctrl'}, 'n', keyCode('down'))
 remapKey({'ctrl'}, 'b', keyCode('left'))
 remapKey({'ctrl'}, 'f', keyCode('right'))
 
-remapKey({'ctrl'}, 'a', keyCode('home'))
-remapKey({'ctrl'}, 'e', keyCode('end'))
+remapKey({'ctrl'}, 'a', keyCode('left', {'cmd'}))
+remapKey({'ctrl'}, 'e', keyCode('right', {'cmd'}))
 
-remapKey({'ctrl'}, 'h', keyCode('delete'))        -- backspace
-remapKey({'ctrl'}, 'd', keyCode('forwarddelete')) -- delete
+remapKey({'ctrl'}, 'h', keyCode('delete'))              -- backspace
+remapKey({'ctrl'}, 'd', keyCode('forwarddelete'))       -- delete
 
-remapKey({'alt'}, 'w', keyCode('c', {'cmd'}))     -- copy
-remapKey({'ctrl'}, 'w', keyCode('x', {'cmd'}))    -- cut
-remapKey({'ctrl'}, 'k', killLine())               -- kill-line
-remapKey({'ctrl'}, 'y', keyCode('v', {'cmd'}))    -- paste
-remapKey({'ctrl'}, '/', keyCode('z', {'cmd'}))    -- undo
+remapKey({'alt'}, 'w', keyCode('c', {'cmd'}))           -- copy
+remapKey({'ctrl'}, 'w', keyCode('x', {'cmd'}))          -- cut
+remapKey({'ctrl'}, 'k', killLine())                     -- kill-line
+remapKey({'ctrl'}, 'y', keyCode('v', {'cmd'}))          -- paste
+remapKey({'ctrl'}, '/', keyCode('z', {'cmd'}))          -- undo
+remapKey({'alt'}, '/', keyCode('z', {'cmd', 'shift'}))  -- redo
