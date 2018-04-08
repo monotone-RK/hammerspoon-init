@@ -37,7 +37,15 @@ local function handleGlobalAppEvent(name, event, app)
       -- if name == "Microsoft Word" then
       if string.find(name, "Microsoft") then
 	 enableAllHotkeys()
+      elseif name == "Google Chrome" then
+	 enableAllHotkeys()
       elseif name == "Thunderbird" then
+	 enableAllHotkeys()
+      elseif name == "Skype" then
+	 enableAllHotkeys()
+      elseif name == "LINE" then
+	 enableAllHotkeys()
+      elseif name == "Slack" then
 	 enableAllHotkeys()
       else
 	 disableAllHotkeys()
