@@ -64,6 +64,9 @@ remapKey({'ctrl'}, 'f', keyCode('right'))
 remapKey({'ctrl'}, 'a', keyCode('left', {'cmd'}))
 remapKey({'ctrl'}, 'e', keyCode('right', {'cmd'}))
 
+remapKey({'ctrl'}, 'v', keyCode('pagedown'))
+remapKey({'alt'}, 'v', keyCode('pageup'))
+
 remapKey({'ctrl'}, 'h', keyCode('delete'))              -- backspace
 remapKey({'ctrl'}, 'd', keyCode('forwarddelete'))       -- delete
 
