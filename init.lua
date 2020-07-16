@@ -153,6 +153,8 @@ local function handleGlobalAppEvent(name, event, app)
 	 enableAllHotkeys()
       elseif name == "Slack" then
 	 enableAllHotkeys()
+      elseif name == "DeepL" then
+	 enableAllHotkeys()
       else
 	 disableAllHotkeys()
 	 markMode:disable()
