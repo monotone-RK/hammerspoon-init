@@ -83,7 +83,7 @@ markMode = SubMode.new(
         {modifiers = {ctrl = true}, key = 'space'}, -- only disables mark mode
         {modifiers = {ctrl = true}, key = 'g'}, -- only disables mark mode
         {modifiers = {ctrl = true}, key = 'w', func = pressKeyFunc({'cmd'}, 'x')},
-        {modifiers = {alt = true},  key = 'w', func = pressKeyFunc({'cmd'}, 'c')}, 
+        {modifiers = {alt = true},  key = 'w', func = pressKeyFunc({'cmd'}, 'c')},
         {modifiers = {ctrl = true}, key = 'p', func = cursorWithMarkModeFunc({'shift'}, 'up')},
         {modifiers = {ctrl = true}, key = 'n', func = cursorWithMarkModeFunc({'shift'}, 'down')},
         {modifiers = {ctrl = true}, key = 'b', func = cursorWithMarkModeFunc({'shift'}, 'left')},
@@ -145,6 +145,8 @@ local function handleGlobalAppEvent(name, event, app)
 	 enableAllHotkeys()
       elseif name == "Google Chrome" then
 	 enableAllHotkeys()
+      elseif name == "Safari" then
+	 enableAllHotkeys()
       elseif name == "Thunderbird" then
 	 enableAllHotkeys()
       elseif name == "Skype" then
@@ -154,6 +156,8 @@ local function handleGlobalAppEvent(name, event, app)
       elseif name == "Slack" then
 	 enableAllHotkeys()
       elseif name == "DeepL" then
+	 enableAllHotkeys()
+      elseif name == "メモ" then
 	 enableAllHotkeys()
       else
 	 disableAllHotkeys()
